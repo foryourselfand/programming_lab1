@@ -1,8 +1,6 @@
 public class Main {
 	public static void main(String[] args) {
-		short[] b = new short[14];
-		for (short i = 0, j = 18; i < b.length; i++, j--)
-			b[i] = j;
+		short[] b = {18, 17, 16, 15, 14, 13, 12, 11, 10, 9, 8, 7, 6, 5};
 
 		double[] x = new double[20];
 		for (int i = 0; i < x.length; i++)
@@ -13,7 +11,7 @@ public class Main {
 			for (int j = 0; j < d[i].length; j++) {
 				switch ((int) b[i]) {
 					case 7:
-						d[i][j] = Math.asin(Math.pow(Math.E, Math.cbrt(- Math.pow(Math.sin(x[j]), 2))));
+						d[i][j] = Math.asin(Math.pow(Math.E, Math.cbrt(-Math.pow(Math.sin(x[j]), 2))));
 						break;
 					case 5:
 					case 6:
