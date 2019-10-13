@@ -11,7 +11,7 @@ public class Main {
 			for (int j = 0; j < f[i].length; j++) {
 				switch ((int) d[i]) {
 					case 7:
-						f[i][j] = Math.asin(Math.pow(Math.E, Math.cbrt(-Math.pow(Math.sin(x[j]), 2))));
+						f[i][j] = Math.asin(Math.pow(Math.E, (Math.cbrt(-Math.pow(Math.sin(x[j]), 2)))));
 						break;
 					case 5:
 					case 6:
@@ -20,10 +20,10 @@ public class Main {
 					case 15:
 					case 16:
 					case 17:
-						f[i][j] = Math.sin(Math.pow(3 * (Math.cos(x[j]) - 1), Math.pow(3 * x[j], 3)));
+						f[i][j] = Math.sin(Math.pow((3*(Math.cos(x[j])-1)), (Math.pow((3*x[j]), 3))));
 						break;
 					default:
-						f[i][j] = Math.pow(Math.E, Math.pow(Math.E, 4 * ((1 / 2) + x[j])));
+						f[i][j] = Math.pow(Math.E, (Math.pow(Math.E, (4*(1/2+x[j])))))+1/2;
 						break;
 				}
 				System.out.printf("%.3f ", f[i][j]);
